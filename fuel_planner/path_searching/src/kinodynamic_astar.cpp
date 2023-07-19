@@ -650,7 +650,8 @@ Eigen::Vector3i KinodynamicAstar::posToIndex(Eigen::Vector3d pt) {
 }
 
 int KinodynamicAstar::timeToIndex(double time) {
-  int idx = floor((time - time_origin_) * inv_time_resolution_);
+  // int idx = floor((time - time_origin_) * inv_time_resolution_);
+  return floor((time - time_origin_) * inv_time_resolution_);
 }
 
 void KinodynamicAstar::stateTransit(Eigen::Matrix<double, 6, 1>& state0,

@@ -60,6 +60,14 @@ This project has been tested on Ubuntu 16.04(ROS Kinetic) and 18.04(ROS Melodic)
 
 ```
   sudo apt-get install libarmadillo-dev ros-melodic-nlopt
+
+```
+
+### for noetic
+Using NLopt library directly compiled from the source.
+```
+  sudo apt-get install libarmadillo-dev
+  sudo apt-get install libdw-dev
 ```
 
 <!-- To simulate the depth camera, we use a simulator based on CUDA Toolkit. Please install it first following the [instruction of CUDA](https://developer.nvidia.com/zh-cn/cuda-toolkit). 
